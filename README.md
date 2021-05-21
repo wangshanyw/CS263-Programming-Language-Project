@@ -1,1 +1,2 @@
-# equivlence_between_3_Denotational_Semantics_and-_small_step
+# CS263-Programming-Language-Project
+Note that our topic is Equivlence between 3 Denotational Semantics and small step semantics.
