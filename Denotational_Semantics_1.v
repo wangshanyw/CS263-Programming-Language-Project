@@ -1,0 +1,1 @@
+(* In this file, we will define the first kind of Denotational Semantics, which reflect the relationship bewteen two discrete program status.*)
