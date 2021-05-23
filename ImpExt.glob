@@ -1,0 +1,138 @@
+DIGEST 8d32f5c9827efc975678678b2c4e72b1
+FPL.ImpExt
+R15:20 PL.Imp <> <> lib
+R38:49 PL.RTClosure <> <> lib
+R609:617 PL.Imp <> cstep_ind scheme
+R825:831 Coq.Init.Logic <> eq_refl constr
+prf 1625:1639 <> zero_plus_equiv
+R1653:1656 PL.Imp <> aexp ind
+binder 1650:1650 <> a:1
+R1662:1671 PL.Imp <> aexp_equiv def
+R1681:1681 PL.ImpExt <> a:1 var
+R1675:1677 PL.Imp <> ::imp_scope:x_'+'_x not
+R1678:1678 PL.ImpExt <> a:1 var
+R1710:1719 PL.Imp <> aexp_equiv def
+R1740:1749 PL.Imp Func equiv def
+R1752:1759 PL.Imp Func add def
+R1762:1774 PL.Imp <> constant_func def
+prf 1815:1829 <> plus_zero_equiv
+R1843:1846 PL.Imp <> aexp ind
+binder 1840:1840 <> a:2
+R1852:1861 PL.Imp <> aexp_equiv def
+R1871:1871 PL.ImpExt <> a:2 var
+R1865:1867 PL.Imp <> ::imp_scope:x_'+'_x not
+R1864:1864 PL.ImpExt <> a:2 var
+R1900:1909 PL.Imp <> aexp_equiv def
+R1930:1939 PL.Imp Func equiv def
+R1942:1949 PL.Imp Func add def
+R1952:1964 PL.Imp <> constant_func def
+prf 2005:2020 <> minus_zero_equiv
+R2034:2037 PL.Imp <> aexp ind
+binder 2031:2031 <> a:3
+R2043:2052 PL.Imp <> aexp_equiv def
+R2062:2062 PL.ImpExt <> a:3 var
+R2056:2058 PL.Imp <> ::imp_scope:x_'-'_x not
+R2055:2055 PL.ImpExt <> a:3 var
+R2091:2100 PL.Imp <> aexp_equiv def
+R2121:2130 PL.Imp Func equiv def
+R2133:2140 PL.Imp Func sub def
+R2143:2155 PL.Imp <> constant_func def
+prf 2196:2210 <> zero_mult_equiv
+R2224:2227 PL.Imp <> aexp ind
+binder 2221:2221 <> a:4
+R2233:2242 PL.Imp <> aexp_equiv def
+R2246:2248 PL.Imp <> ::imp_scope:x_'*'_x not
+R2249:2249 PL.ImpExt <> a:4 var
+R2281:2290 PL.Imp <> aexp_equiv def
+R2311:2320 PL.Imp Func equiv def
+R2323:2330 PL.Imp Func mul def
+R2333:2345 PL.Imp <> constant_func def
+prf 2386:2400 <> mult_zero_equiv
+R2414:2417 PL.Imp <> aexp ind
+binder 2411:2411 <> a:5
+R2423:2432 PL.Imp <> aexp_equiv def
+R2436:2438 PL.Imp <> ::imp_scope:x_'*'_x not
+R2435:2435 PL.ImpExt <> a:5 var
+R2471:2480 PL.Imp <> aexp_equiv def
+R2501:2510 PL.Imp Func equiv def
+R2513:2520 PL.Imp Func mul def
+R2523:2535 PL.Imp <> constant_func def
+prf 2576:2589 <> one_mult_equiv
+R2603:2606 PL.Imp <> aexp ind
+binder 2600:2600 <> a:6
+R2612:2621 PL.Imp <> aexp_equiv def
+R2631:2631 PL.ImpExt <> a:6 var
+R2625:2627 PL.Imp <> ::imp_scope:x_'*'_x not
+R2628:2628 PL.ImpExt <> a:6 var
+R2660:2669 PL.Imp <> aexp_equiv def
+R2690:2699 PL.Imp Func equiv def
+R2702:2709 PL.Imp Func mul def
+R2712:2724 PL.Imp <> constant_func def
+prf 2756:2769 <> mult_one_equiv
+R2783:2786 PL.Imp <> aexp ind
+binder 2780:2780 <> a:7
+R2792:2801 PL.Imp <> aexp_equiv def
+R2811:2811 PL.ImpExt <> a:7 var
+R2805:2807 PL.Imp <> ::imp_scope:x_'*'_x not
+R2804:2804 PL.ImpExt <> a:7 var
+R2840:2849 PL.Imp <> aexp_equiv def
+R2870:2879 PL.Imp Func equiv def
+R2882:2889 PL.Imp Func mul def
+R2892:2904 PL.Imp <> constant_func def
+def 2939:2949 <> remove_skip
+R2955:2957 PL.Imp <> com ind
+binder 2952:2952 <> c:8
+R2961:2963 PL.Imp <> com ind
+R2976:2976 PL.ImpExt <> c:8 var
+R2987:2991 PL.Imp <> CSkip constr
+R3002:3006 PL.Imp <> CSkip constr
+R3012:3015 PL.Imp <> CAss constr
+R3030:3033 PL.Imp <> CAss constr
+R3043:3046 PL.Imp <> CSeq constr
+R3069:3079 PL.ImpExt <> remove_skip:9 def
+R3097:3101 PL.Imp <> CSkip constr
+R3106:3116 PL.ImpExt <> remove_skip:9 def
+R3134:3137 PL.Imp <> CSeq constr
+R3157:3167 PL.ImpExt <> remove_skip:9 def
+R3140:3150 PL.ImpExt <> remove_skip:9 def
+R3187:3189 PL.Imp <> CIf constr
+R3208:3210 PL.Imp <> CIf constr
+R3232:3242 PL.ImpExt <> remove_skip:9 def
+R3215:3225 PL.ImpExt <> remove_skip:9 def
+R3252:3257 PL.Imp <> CWhile constr
+R3273:3278 PL.Imp <> CWhile constr
+R3283:3293 PL.ImpExt <> remove_skip:9 def
+prf 3313:3333 <> remove_skip_skip_step
+binder 3343:3344 <> c1:11
+binder 3346:3347 <> c2:12
+binder 3349:3351 <> st1:13
+binder 3353:3355 <> st2:14
+R3382:3387 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3413:3418 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3428:3431 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3422:3424 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3419:3421 PL.ImpExt <> st1:13 var
+R3425:3427 PL.ImpExt <> st2:14 var
+R3446:3448 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3432:3442 PL.ImpExt <> remove_skip def
+R3444:3445 PL.ImpExt <> c2:12 var
+R3449:3453 PL.Imp <> CSkip constr
+R3388:3392 PL.Imp <> cstep ind
+R3404:3404 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3407:3408 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3412:3412 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3405:3406 PL.ImpExt <> c2:12 var
+R3409:3411 PL.ImpExt <> st2:14 var
+R3394:3394 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3397:3398 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3402:3402 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3395:3396 PL.ImpExt <> c1:11 var
+R3399:3401 PL.ImpExt <> st1:13 var
+R3374:3376 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3360:3370 PL.ImpExt <> remove_skip def
+R3372:3373 PL.ImpExt <> c1:11 var
+R3377:3381 PL.Imp <> CSkip constr
+R3594:3604 PL.ImpExt <> remove_skip def
+R3594:3604 PL.ImpExt <> remove_skip def
+R3668:3674 Coq.Init.Logic <> eq_refl constr
+R3668:3674 Coq.Init.Logic <> eq_refl constr
