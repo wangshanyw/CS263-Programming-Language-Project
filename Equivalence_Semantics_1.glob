@@ -1,0 +1,585 @@
+DIGEST c46d0b144260943f3ea8385147211db7
+FPL.Equivalence_Semantics_1
+R15:20 PL.Imp <> <> lib
+R22:30 PL.ImpExt <> <> lib
+R32:43 PL.RTClosure <> <> lib
+prf 369:388 <> semantic_equiv_aexp1
+binder 398:399 <> st:1
+binder 401:401 <> a:2
+binder 403:403 <> n:3
+R422:425 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R426:436 PL.Imp <> multi_astep def
+R444:447 PL.Imp <> ANum constr
+R449:449 PL.Equivalence_Semantics_1 <> n:3 var
+R441:441 PL.Equivalence_Semantics_1 <> a:2 var
+R438:439 PL.Equivalence_Semantics_1 <> st:1 var
+R418:420 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R408:412 PL.Imp <> aeval def
+R416:417 PL.Equivalence_Semantics_1 <> st:1 var
+R414:414 PL.Equivalence_Semantics_1 <> a:2 var
+R421:421 PL.Equivalence_Semantics_1 <> n:3 var
+R528:540 PL.Imp <> constant_func def
+R647:651 PL.Imp <> AS_Id constr
+R647:651 PL.Imp <> AS_Id constr
+R685:702 PL.Imp <> multi_congr_APlus1 thm
+R685:702 PL.Imp <> multi_congr_APlus1 thm
+R760:777 PL.Imp <> multi_congr_APlus2 thm
+R787:792 PL.Imp <> AH_num constr
+R760:777 PL.Imp <> multi_congr_APlus2 thm
+R787:792 PL.Imp <> AH_num constr
+R853:859 PL.Imp <> AS_Plus constr
+R853:859 PL.Imp <> AS_Plus constr
+R893:911 PL.Imp <> multi_congr_AMinus1 thm
+R893:911 PL.Imp <> multi_congr_AMinus1 thm
+R969:987 PL.Imp <> multi_congr_AMinus2 thm
+R997:1002 PL.Imp <> AH_num constr
+R969:987 PL.Imp <> multi_congr_AMinus2 thm
+R997:1002 PL.Imp <> AH_num constr
+R1063:1070 PL.Imp <> AS_Minus constr
+R1063:1070 PL.Imp <> AS_Minus constr
+R1104:1121 PL.Imp <> multi_congr_AMult1 thm
+R1104:1121 PL.Imp <> multi_congr_AMult1 thm
+R1179:1196 PL.Imp <> multi_congr_AMult2 thm
+R1206:1211 PL.Imp <> AH_num constr
+R1179:1196 PL.Imp <> multi_congr_AMult2 thm
+R1206:1211 PL.Imp <> AH_num constr
+R1272:1278 PL.Imp <> AS_Mult constr
+R1272:1278 PL.Imp <> AS_Mult constr
+prf 1295:1314 <> semantic_equiv_bexp1
+binder 1324:1325 <> st:4
+binder 1327:1327 <> b:5
+R1332:1332 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1369:1376 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1416:1416 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1343:1346 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1347:1357 PL.Imp <> multi_bstep def
+R1364:1368 PL.Imp <> BTrue constr
+R1362:1362 PL.Equivalence_Semantics_1 <> b:5 var
+R1359:1360 PL.Equivalence_Semantics_1 <> st:4 var
+R1333:1337 PL.Imp <> beval def
+R1341:1342 PL.Equivalence_Semantics_1 <> st:4 var
+R1339:1339 PL.Equivalence_Semantics_1 <> b:5 var
+R1389:1392 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1393:1403 PL.Imp <> multi_bstep def
+R1410:1415 PL.Imp <> BFalse constr
+R1408:1408 PL.Equivalence_Semantics_1 <> b:5 var
+R1405:1406 PL.Equivalence_Semantics_1 <> st:4 var
+R1377:1378 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1379:1383 PL.Imp <> beval def
+R1387:1388 PL.Equivalence_Semantics_1 <> st:4 var
+R1385:1385 PL.Equivalence_Semantics_1 <> b:5 var
+R1515:1523 PL.Imp Sets full def
+R1563:1572 PL.Imp Sets empty def
+R1633:1643 PL.Imp <> multi_bstep def
+R1671:1674 PL.Imp <> ::imp_scope:x_'=='_x not
+R1660:1664 PL.Imp <> aeval def
+R1675:1679 PL.Imp <> aeval def
+R1651:1654 PL.Imp <> ::imp_scope:x_'=='_x not
+R1633:1643 PL.Imp <> multi_bstep def
+R1671:1674 PL.Imp <> ::imp_scope:x_'=='_x not
+R1660:1664 PL.Imp <> aeval def
+R1675:1679 PL.Imp <> aeval def
+R1651:1654 PL.Imp <> ::imp_scope:x_'=='_x not
+R1731:1746 PL.Imp <> multi_congr_BEq1 thm
+R1749:1768 PL.Equivalence_Semantics_1 <> semantic_equiv_aexp1 thm
+R1731:1746 PL.Imp <> multi_congr_BEq1 thm
+R1749:1768 PL.Equivalence_Semantics_1 <> semantic_equiv_aexp1 thm
+R1806:1821 PL.Imp <> multi_congr_BEq2 thm
+R1831:1836 PL.Imp <> AH_num constr
+R1806:1821 PL.Imp <> multi_congr_BEq2 thm
+R1831:1836 PL.Imp <> AH_num constr
+R1856:1875 PL.Equivalence_Semantics_1 <> semantic_equiv_aexp1 thm
+R1856:1875 PL.Equivalence_Semantics_1 <> semantic_equiv_aexp1 thm
+R1923:1934 PL.Imp Func test_eq def
+R1994:2003 PL.Imp <> BS_Eq_True constr
+R1994:2003 PL.Imp <> BS_Eq_True constr
+R2022:2032 PL.Imp <> BS_Eq_False constr
+R2022:2032 PL.Imp <> BS_Eq_False constr
+R2051:2061 PL.Imp <> multi_bstep def
+R2089:2092 PL.Imp <> ::imp_scope:x_'<='_x not
+R2078:2082 PL.Imp <> aeval def
+R2093:2097 PL.Imp <> aeval def
+R2069:2072 PL.Imp <> ::imp_scope:x_'<='_x not
+R2051:2061 PL.Imp <> multi_bstep def
+R2089:2092 PL.Imp <> ::imp_scope:x_'<='_x not
+R2078:2082 PL.Imp <> aeval def
+R2093:2097 PL.Imp <> aeval def
+R2069:2072 PL.Imp <> ::imp_scope:x_'<='_x not
+R2149:2164 PL.Imp <> multi_congr_BLe1 thm
+R2167:2186 PL.Equivalence_Semantics_1 <> semantic_equiv_aexp1 thm
+R2149:2164 PL.Imp <> multi_congr_BLe1 thm
+R2167:2186 PL.Equivalence_Semantics_1 <> semantic_equiv_aexp1 thm
+R2224:2239 PL.Imp <> multi_congr_BLe2 thm
+R2249:2254 PL.Imp <> AH_num constr
+R2224:2239 PL.Imp <> multi_congr_BLe2 thm
+R2249:2254 PL.Imp <> AH_num constr
+R2274:2293 PL.Equivalence_Semantics_1 <> semantic_equiv_aexp1 thm
+R2274:2293 PL.Equivalence_Semantics_1 <> semantic_equiv_aexp1 thm
+R2341:2352 PL.Imp Func test_le def
+R2412:2421 PL.Imp <> BS_Le_True constr
+R2412:2421 PL.Imp <> BS_Le_True constr
+R2440:2450 PL.Imp <> BS_Le_False constr
+R2440:2450 PL.Imp <> BS_Le_False constr
+R2552:2567 PL.Imp <> multi_congr_BNot thm
+R2552:2567 PL.Imp <> multi_congr_BNot thm
+R2590:2604 PL.Imp Sets complement def
+R2635:2645 PL.Imp <> BS_NotFalse constr
+R2635:2645 PL.Imp <> BS_NotFalse constr
+R2686:2701 PL.Imp <> multi_congr_BNot thm
+R2686:2701 PL.Imp <> multi_congr_BNot thm
+R2724:2738 PL.Imp Sets complement def
+R2767:2776 PL.Imp <> BS_NotTrue constr
+R2767:2776 PL.Imp <> BS_NotTrue constr
+R2866:2872 Coq.Logic.Classical_Prop <> classic prfax
+R2875:2879 PL.Imp <> beval def
+R2866:2872 Coq.Logic.Classical_Prop <> classic prfax
+R2875:2879 PL.Imp <> beval def
+R2919:2929 PL.Imp <> multi_bstep def
+R2937:2940 PL.Imp <> ::imp_scope:x_'&&'_x not
+R2919:2929 PL.Imp <> multi_bstep def
+R2937:2940 PL.Imp <> ::imp_scope:x_'&&'_x not
+R3000:3015 PL.Imp <> multi_congr_BAnd thm
+R3000:3015 PL.Imp <> multi_congr_BAnd thm
+R3044:3053 PL.Imp <> BS_AndTrue constr
+R3044:3053 PL.Imp <> BS_AndTrue constr
+R3084:3097 PL.Imp Sets intersect def
+R3221:3234 PL.Imp Sets intersect def
+R3295:3310 PL.Imp <> multi_congr_BAnd thm
+R3295:3310 PL.Imp <> multi_congr_BAnd thm
+R3337:3347 PL.Imp <> BS_AndFalse constr
+R3337:3347 PL.Imp <> BS_AndFalse constr
+prf 3366:3390 <> semantic_equiv_bexp1_true
+binder 3400:3401 <> st:6
+binder 3403:3403 <> b:7
+R3418:3421 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3422:3432 PL.Imp <> multi_bstep def
+R3439:3443 PL.Imp <> BTrue constr
+R3437:3437 PL.Equivalence_Semantics_1 <> b:7 var
+R3434:3435 PL.Equivalence_Semantics_1 <> st:6 var
+R3408:3412 PL.Imp <> beval def
+R3416:3417 PL.Equivalence_Semantics_1 <> st:6 var
+R3414:3414 PL.Equivalence_Semantics_1 <> b:7 var
+R3472:3491 PL.Equivalence_Semantics_1 <> semantic_equiv_bexp1 thm
+R3472:3491 PL.Equivalence_Semantics_1 <> semantic_equiv_bexp1 thm
+prf 3524:3549 <> semantic_equiv_bexp1_false
+binder 3559:3560 <> st:8
+binder 3562:3562 <> b:9
+R3596:3599 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3600:3610 PL.Imp <> multi_bstep def
+R3617:3622 PL.Imp <> BFalse constr
+R3615:3615 PL.Equivalence_Semantics_1 <> b:9 var
+R3612:3613 PL.Equivalence_Semantics_1 <> st:8 var
+R3568:3582 PL.Imp Sets complement def
+R3594:3595 PL.Equivalence_Semantics_1 <> st:8 var
+R3585:3589 PL.Imp <> beval def
+R3591:3591 PL.Equivalence_Semantics_1 <> b:9 var
+R3652:3671 PL.Equivalence_Semantics_1 <> semantic_equiv_bexp1 thm
+R3652:3671 PL.Equivalence_Semantics_1 <> semantic_equiv_bexp1 thm
+prf 3698:3722 <> semantic_equiv_iter_loop1
+binder 3732:3734 <> st1:10
+binder 3736:3738 <> st2:11
+binder 3740:3740 <> n:12
+binder 3742:3742 <> b:13
+binder 3744:3744 <> c:14
+R3749:3749 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3817:3823 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3860:3865 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3866:3876 PL.Imp <> multi_cstep def
+R3907:3907 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3912:3913 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3917:3917 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3908:3911 PL.Imp <> ::imp_scope:'Skip' not
+R3914:3916 PL.Equivalence_Semantics_1 <> st2:11 var
+R3878:3878 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3900:3901 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3905:3905 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3879:3884 PL.Imp <> ::imp_scope:'While'_x_'Do'_x_'EndWhile' not
+R3886:3889 PL.Imp <> ::imp_scope:'While'_x_'Do'_x_'EndWhile' not
+R3891:3899 PL.Imp <> ::imp_scope:'While'_x_'Do'_x_'EndWhile' not
+R3885:3885 PL.Equivalence_Semantics_1 <> b:13 var
+R3890:3890 PL.Equivalence_Semantics_1 <> c:14 var
+R3902:3904 PL.Equivalence_Semantics_1 <> st1:10 var
+R3824:3837 PL.Imp <> iter_loop_body def
+R3857:3859 PL.Equivalence_Semantics_1 <> st2:11 var
+R3853:3855 PL.Equivalence_Semantics_1 <> st1:10 var
+R3851:3851 PL.Equivalence_Semantics_1 <> n:12 var
+R3842:3846 PL.Imp <> ceval def
+R3848:3848 PL.Equivalence_Semantics_1 <> c:14 var
+R3839:3839 PL.Equivalence_Semantics_1 <> b:13 var
+binder 3757:3759 <> st1:15
+binder 3761:3763 <> st2:16
+R3781:3784 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3785:3795 PL.Imp <> multi_cstep def
+R3806:3806 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3811:3812 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3816:3816 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3807:3810 PL.Imp <> ::imp_scope:'Skip' not
+R3813:3815 PL.Equivalence_Semantics_1 <> st2:16 var
+R3797:3797 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3799:3800 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3804:3804 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3798:3798 PL.Equivalence_Semantics_1 <> c:14 var
+R3801:3803 PL.Equivalence_Semantics_1 <> st1:15 var
+R3766:3770 PL.Imp <> ceval def
+R3778:3780 PL.Equivalence_Semantics_1 <> st2:16 var
+R3774:3776 PL.Equivalence_Semantics_1 <> st1:15 var
+R3772:3772 PL.Equivalence_Semantics_1 <> c:14 var
+R4007:4021 PL.Imp BinRel test_rel def
+R4091:4098 PL.Imp <> CS_While constr
+R4091:4098 PL.Imp <> CS_While constr
+R4130:4144 PL.Imp <> multi_congr_CIf thm
+R4147:4172 PL.Equivalence_Semantics_1 <> semantic_equiv_bexp1_false thm
+R4130:4144 PL.Imp <> multi_congr_CIf thm
+R4147:4172 PL.Equivalence_Semantics_1 <> semantic_equiv_bexp1_false thm
+R4211:4220 PL.Imp <> CS_IfFalse constr
+R4211:4220 PL.Imp <> CS_IfFalse constr
+R4271:4283 PL.Imp BinRel concat def
+R4302:4316 PL.Imp BinRel test_rel def
+R4382:4394 PL.Imp BinRel concat def
+R4465:4472 PL.Imp <> CS_While constr
+R4465:4472 PL.Imp <> CS_While constr
+R4504:4518 PL.Imp <> multi_congr_CIf thm
+R4521:4545 PL.Equivalence_Semantics_1 <> semantic_equiv_bexp1_true thm
+R4504:4518 PL.Imp <> multi_congr_CIf thm
+R4521:4545 PL.Equivalence_Semantics_1 <> semantic_equiv_bexp1_true thm
+R4584:4592 PL.Imp <> CS_IfTrue constr
+R4584:4592 PL.Imp <> CS_IfTrue constr
+R4624:4639 PL.Imp <> multi_congr_CSeq thm
+R4624:4639 PL.Imp <> multi_congr_CSeq thm
+R4681:4686 PL.Imp <> CS_Seq constr
+R4681:4686 PL.Imp <> CS_Seq constr
+prf 4725:4743 <> semantic_equiv_com1
+binder 4753:4755 <> st1:17
+binder 4757:4759 <> st2:18
+binder 4761:4761 <> c:19
+R4781:4784 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4785:4795 PL.Imp <> multi_cstep def
+R4806:4806 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4811:4812 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4816:4816 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4807:4810 PL.Imp <> ::imp_scope:'Skip' not
+R4813:4815 PL.Equivalence_Semantics_1 <> st2:18 var
+R4797:4797 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4799:4800 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4804:4804 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4798:4798 PL.Equivalence_Semantics_1 <> c:19 var
+R4801:4803 PL.Equivalence_Semantics_1 <> st1:17 var
+R4766:4770 PL.Imp <> ceval def
+R4778:4780 PL.Equivalence_Semantics_1 <> st2:18 var
+R4774:4776 PL.Equivalence_Semantics_1 <> st1:17 var
+R4772:4772 PL.Equivalence_Semantics_1 <> c:19 var
+R4889:4899 PL.Imp <> ceval_CSkip thm
+R4889:4899 PL.Imp <> ceval_CSkip thm
+R4889:4899 PL.Imp <> ceval_CSkip thm
+R4918:4926 PL.Imp BinRel id def
+R4978:4987 PL.Imp <> ceval_CAss thm
+R4978:4987 PL.Imp <> ceval_CAss thm
+R4978:4987 PL.Imp <> ceval_CAss thm
+R5045:5060 PL.Imp <> multi_congr_CAss thm
+R5063:5082 PL.Equivalence_Semantics_1 <> semantic_equiv_aexp1 thm
+R5045:5060 PL.Imp <> multi_congr_CAss thm
+R5063:5082 PL.Equivalence_Semantics_1 <> semantic_equiv_aexp1 thm
+R5116:5121 PL.Imp <> CS_Ass constr
+R5116:5121 PL.Imp <> CS_Ass constr
+R5141:5145 PL.Imp <> ceval def
+R5160:5169 PL.Imp <> ceval_CSeq thm
+R5160:5169 PL.Imp <> ceval_CSeq thm
+R5160:5169 PL.Imp <> ceval_CSeq thm
+R5188:5200 PL.Imp BinRel concat def
+R5265:5280 PL.Imp <> multi_congr_CSeq thm
+R5265:5280 PL.Imp <> multi_congr_CSeq thm
+R5325:5330 PL.Imp <> CS_Seq constr
+R5325:5330 PL.Imp <> CS_Seq constr
+R5368:5376 PL.Imp <> ceval_CIf thm
+R5368:5376 PL.Imp <> ceval_CIf thm
+R5368:5376 PL.Imp <> ceval_CIf thm
+R5395:5400 PL.Imp <> if_sem def
+R5419:5430 PL.Imp BinRel union def
+R5444:5456 PL.Imp BinRel concat def
+R5470:5484 PL.Imp BinRel test_rel def
+R5507:5526 PL.Equivalence_Semantics_1 <> semantic_equiv_bexp1 thm
+R5507:5526 PL.Equivalence_Semantics_1 <> semantic_equiv_bexp1 thm
+R5647:5661 PL.Imp <> multi_congr_CIf thm
+R5647:5661 PL.Imp <> multi_congr_CIf thm
+R5706:5714 PL.Imp <> CS_IfTrue constr
+R5706:5714 PL.Imp <> CS_IfTrue constr
+R5770:5784 PL.Imp <> multi_congr_CIf thm
+R5770:5784 PL.Imp <> multi_congr_CIf thm
+R5829:5838 PL.Imp <> CS_IfFalse constr
+R5829:5838 PL.Imp <> CS_IfFalse constr
+R5878:5889 PL.Imp <> ceval_CWhile thm
+R5878:5889 PL.Imp <> ceval_CWhile thm
+R5878:5889 PL.Imp <> ceval_CWhile thm
+R5908:5915 PL.Imp <> loop_sem def
+R5934:5951 PL.Imp BinRel omega_union def
+R5994:6018 PL.Equivalence_Semantics_1 <> semantic_equiv_iter_loop1 thm
+R5994:6018 PL.Equivalence_Semantics_1 <> semantic_equiv_iter_loop1 thm
+prf 6195:6208 <> aeval_preserve
+binder 6218:6219 <> st:20
+binder 6221:6222 <> a1:21
+binder 6224:6225 <> a2:22
+R6244:6249 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6261:6264 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6250:6254 PL.Imp <> aeval def
+R6259:6260 PL.Equivalence_Semantics_1 <> st:20 var
+R6256:6257 PL.Equivalence_Semantics_1 <> a1:21 var
+R6265:6269 PL.Imp <> aeval def
+R6274:6275 PL.Equivalence_Semantics_1 <> st:20 var
+R6271:6272 PL.Equivalence_Semantics_1 <> a2:22 var
+R6230:6234 PL.Imp <> astep ind
+R6242:6243 PL.Equivalence_Semantics_1 <> a2:22 var
+R6239:6240 PL.Equivalence_Semantics_1 <> a1:21 var
+R6236:6237 PL.Equivalence_Semantics_1 <> st:20 var
+R6360:6367 PL.Imp Func add def
+R6401:6408 PL.Imp Func add def
+R6442:6449 PL.Imp Func add def
+R6452:6464 PL.Imp <> constant_func def
+R6506:6513 PL.Imp Func sub def
+R6547:6554 PL.Imp Func sub def
+R6588:6595 PL.Imp Func sub def
+R6598:6610 PL.Imp <> constant_func def
+R6652:6659 PL.Imp Func mul def
+R6693:6700 PL.Imp Func mul def
+R6734:6741 PL.Imp Func mul def
+R6744:6756 PL.Imp <> constant_func def
+prf 6790:6809 <> semantic_equiv_aexp2
+binder 6819:6820 <> st:23
+binder 6822:6822 <> a:24
+binder 6824:6824 <> n:25
+R6854:6857 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6868:6870 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6858:6862 PL.Imp <> aeval def
+R6866:6867 PL.Equivalence_Semantics_1 <> st:23 var
+R6864:6864 PL.Equivalence_Semantics_1 <> a:24 var
+R6871:6871 PL.Equivalence_Semantics_1 <> n:25 var
+R6829:6839 PL.Imp <> multi_astep def
+R6847:6850 PL.Imp <> ANum constr
+R6852:6852 PL.Equivalence_Semantics_1 <> n:25 var
+R6844:6844 PL.Equivalence_Semantics_1 <> a:24 var
+R6841:6842 PL.Equivalence_Semantics_1 <> st:23 var
+R6952:6965 PL.Equivalence_Semantics_1 <> aeval_preserve thm
+R6952:6965 PL.Equivalence_Semantics_1 <> aeval_preserve thm
+prf 6997:7010 <> beval_preserve
+binder 7020:7021 <> st:26
+binder 7023:7024 <> b1:27
+binder 7026:7027 <> b2:28
+R7046:7052 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7081:7081 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7064:7069 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R7053:7057 PL.Imp <> beval def
+R7062:7063 PL.Equivalence_Semantics_1 <> st:26 var
+R7059:7060 PL.Equivalence_Semantics_1 <> b1:27 var
+R7070:7074 PL.Imp <> beval def
+R7079:7080 PL.Equivalence_Semantics_1 <> st:26 var
+R7076:7077 PL.Equivalence_Semantics_1 <> b2:28 var
+R7032:7036 PL.Imp <> bstep ind
+R7044:7045 PL.Equivalence_Semantics_1 <> b2:28 var
+R7041:7042 PL.Equivalence_Semantics_1 <> b1:27 var
+R7038:7039 PL.Equivalence_Semantics_1 <> st:26 var
+R7126:7139 PL.Equivalence_Semantics_1 <> aeval_preserve thm
+R7126:7139 PL.Equivalence_Semantics_1 <> aeval_preserve thm
+R7169:7180 PL.Imp Func test_eq def
+R7202:7215 PL.Equivalence_Semantics_1 <> aeval_preserve thm
+R7202:7215 PL.Equivalence_Semantics_1 <> aeval_preserve thm
+R7246:7257 PL.Imp Func test_eq def
+R7291:7302 PL.Imp Func test_eq def
+R7305:7313 PL.Imp Sets full def
+R7349:7360 PL.Imp Func test_eq def
+R7363:7372 PL.Imp Sets empty def
+R7396:7409 PL.Equivalence_Semantics_1 <> aeval_preserve thm
+R7396:7409 PL.Equivalence_Semantics_1 <> aeval_preserve thm
+R7439:7450 PL.Imp Func test_le def
+R7472:7485 PL.Equivalence_Semantics_1 <> aeval_preserve thm
+R7472:7485 PL.Equivalence_Semantics_1 <> aeval_preserve thm
+R7516:7527 PL.Imp Func test_le def
+R7561:7572 PL.Imp Func test_le def
+R7575:7583 PL.Imp Sets full def
+R7619:7630 PL.Imp Func test_le def
+R7633:7645 PL.Imp <> constant_func def
+R7648:7657 PL.Imp Sets empty def
+R7691:7705 PL.Imp Sets complement def
+R7741:7755 PL.Imp Sets complement def
+R7758:7766 PL.Imp Sets full def
+R7769:7778 PL.Imp Sets empty def
+R7814:7828 PL.Imp Sets complement def
+R7831:7839 PL.Imp Sets full def
+R7842:7851 PL.Imp Sets empty def
+R7887:7900 PL.Imp Sets intersect def
+R7936:7949 PL.Imp Sets intersect def
+R7952:7960 PL.Imp Sets full def
+R7996:8009 PL.Imp Sets intersect def
+R8012:8021 PL.Imp Sets empty def
+prf 8049:8068 <> semantic_equiv_bexp2
+binder 8078:8079 <> st:29
+binder 8081:8081 <> b:30
+binder 8083:8084 <> TF:31
+R8108:8113 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8114:8114 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8139:8146 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8174:8174 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8125:8128 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8129:8133 PL.Imp <> beval def
+R8137:8138 PL.Equivalence_Semantics_1 <> st:29 var
+R8135:8135 PL.Equivalence_Semantics_1 <> b:30 var
+R8117:8119 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8115:8116 PL.Equivalence_Semantics_1 <> TF:31 var
+R8120:8124 PL.Imp <> BTrue constr
+R8158:8161 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8162:8163 Coq.Init.Logic <> ::type_scope:'~'_x not
+R8164:8168 PL.Imp <> beval def
+R8172:8173 PL.Equivalence_Semantics_1 <> st:29 var
+R8170:8170 PL.Equivalence_Semantics_1 <> b:30 var
+R8149:8151 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8147:8148 PL.Equivalence_Semantics_1 <> TF:31 var
+R8152:8157 PL.Imp <> BFalse constr
+R8089:8099 PL.Imp <> multi_bstep def
+R8106:8107 PL.Equivalence_Semantics_1 <> TF:31 var
+R8104:8104 PL.Equivalence_Semantics_1 <> b:30 var
+R8101:8102 PL.Equivalence_Semantics_1 <> st:29 var
+R8267:8275 PL.Imp Sets full def
+R8278:8287 PL.Imp Sets empty def
+R8312:8325 PL.Equivalence_Semantics_1 <> beval_preserve thm
+R8312:8325 PL.Equivalence_Semantics_1 <> beval_preserve thm
+prf 8359:8372 <> ceval_preserve
+binder 8382:8383 <> c1:32
+binder 8385:8386 <> c2:33
+binder 8388:8390 <> st1:34
+binder 8392:8394 <> st2:35
+R8424:8429 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8437:8439 <> st3:36
+R8458:8461 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8462:8466 PL.Imp <> ceval def
+R8475:8477 PL.Equivalence_Semantics_1 <> st3:36 var
+R8471:8473 PL.Equivalence_Semantics_1 <> st1:34 var
+R8468:8469 PL.Equivalence_Semantics_1 <> c1:32 var
+R8442:8446 PL.Imp <> ceval def
+R8455:8457 PL.Equivalence_Semantics_1 <> st3:36 var
+R8451:8453 PL.Equivalence_Semantics_1 <> st2:35 var
+R8448:8449 PL.Equivalence_Semantics_1 <> c2:33 var
+R8399:8403 PL.Imp <> cstep ind
+R8415:8415 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8418:8419 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8423:8423 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8416:8417 PL.Equivalence_Semantics_1 <> c2:33 var
+R8420:8422 PL.Equivalence_Semantics_1 <> st2:35 var
+R8405:8405 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8408:8409 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8413:8413 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8406:8407 PL.Equivalence_Semantics_1 <> c1:32 var
+R8410:8412 PL.Equivalence_Semantics_1 <> st1:34 var
+R8714:8727 PL.Equivalence_Semantics_1 <> aeval_preserve thm
+R8714:8727 PL.Equivalence_Semantics_1 <> aeval_preserve thm
+R8747:8756 PL.Imp <> ceval_CAss thm
+R8747:8756 PL.Imp <> ceval_CAss thm
+R8747:8756 PL.Imp <> ceval_CAss thm
+R8777:8786 PL.Imp <> ceval_CAss thm
+R8777:8786 PL.Imp <> ceval_CAss thm
+R8777:8786 PL.Imp <> ceval_CAss thm
+R8827:8837 PL.Imp <> ceval_CSkip thm
+R8827:8837 PL.Imp <> ceval_CSkip thm
+R8827:8837 PL.Imp <> ceval_CSkip thm
+R8858:8867 PL.Imp <> ceval_CAss thm
+R8858:8867 PL.Imp <> ceval_CAss thm
+R8858:8867 PL.Imp <> ceval_CAss thm
+R8881:8889 PL.Imp BinRel id def
+R8932:8941 PL.Imp <> ceval_CSeq thm
+R8932:8941 PL.Imp <> ceval_CSeq thm
+R8932:8941 PL.Imp <> ceval_CSeq thm
+R8962:8971 PL.Imp <> ceval_CSeq thm
+R8962:8971 PL.Imp <> ceval_CSeq thm
+R8962:8971 PL.Imp <> ceval_CSeq thm
+R8985:8997 PL.Imp BinRel concat def
+R9017:9029 PL.Imp BinRel concat def
+R9136:9145 PL.Imp <> ceval_CSeq thm
+R9136:9145 PL.Imp <> ceval_CSeq thm
+R9136:9145 PL.Imp <> ceval_CSeq thm
+R9159:9171 PL.Imp BinRel concat def
+R9174:9182 PL.Imp BinRel id def
+R9258:9266 PL.Imp <> ceval_CIf thm
+R9258:9266 PL.Imp <> ceval_CIf thm
+R9258:9266 PL.Imp <> ceval_CIf thm
+R9287:9295 PL.Imp <> ceval_CIf thm
+R9287:9295 PL.Imp <> ceval_CIf thm
+R9287:9295 PL.Imp <> ceval_CIf thm
+R9309:9314 PL.Imp <> if_sem def
+R9334:9339 PL.Imp <> if_sem def
+R9353:9364 PL.Imp BinRel union def
+R9378:9390 PL.Imp BinRel concat def
+R9404:9418 PL.Imp BinRel test_rel def
+R9438:9449 PL.Imp BinRel union def
+R9463:9475 PL.Imp BinRel concat def
+R9489:9503 PL.Imp BinRel test_rel def
+R9516:9529 PL.Equivalence_Semantics_1 <> beval_preserve thm
+R9516:9529 PL.Equivalence_Semantics_1 <> beval_preserve thm
+R9576:9590 PL.Imp Sets complement def
+R9610:9624 PL.Imp Sets complement def
+R9723:9731 PL.Imp <> ceval_CIf thm
+R9723:9731 PL.Imp <> ceval_CIf thm
+R9723:9731 PL.Imp <> ceval_CIf thm
+R9745:9750 PL.Imp <> if_sem def
+R9764:9775 PL.Imp BinRel union def
+R9789:9801 PL.Imp BinRel concat def
+R9815:9829 PL.Imp BinRel test_rel def
+R9871:9879 PL.Imp Sets full def
+R9901:9909 PL.Imp <> ceval_CIf thm
+R9901:9909 PL.Imp <> ceval_CIf thm
+R9901:9909 PL.Imp <> ceval_CIf thm
+R9923:9928 PL.Imp <> if_sem def
+R9942:9953 PL.Imp BinRel union def
+R9967:9979 PL.Imp BinRel concat def
+R9993:10007 PL.Imp BinRel test_rel def
+R10050:10064 PL.Imp Sets complement def
+R10067:10076 PL.Imp Sets empty def
+R10101:10114 PL.Imp <> loop_unrolling thm
+R10101:10114 PL.Imp <> loop_unrolling thm
+R10132:10140 PL.Imp <> com_equiv def
+R10143:10154 PL.Imp BinRel equiv def
+prf 10214:10232 <> semantic_equiv_com2
+binder 10242:10242 <> c:37
+binder 10244:10246 <> st1:38
+binder 10248:10250 <> st2:39
+R10288:10291 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10292:10296 PL.Imp <> ceval def
+R10304:10306 PL.Equivalence_Semantics_1 <> st2:39 var
+R10300:10302 PL.Equivalence_Semantics_1 <> st1:38 var
+R10298:10298 PL.Equivalence_Semantics_1 <> c:37 var
+R10255:10265 PL.Imp <> multi_cstep def
+R10276:10276 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10282:10283 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10287:10287 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10277:10281 PL.Imp <> CSkip constr
+R10284:10286 PL.Equivalence_Semantics_1 <> st2:39 var
+R10267:10267 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10269:10270 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10274:10274 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10268:10268 PL.Equivalence_Semantics_1 <> c:37 var
+R10271:10273 PL.Equivalence_Semantics_1 <> st1:38 var
+R10338:10342 PL.Imp <> CSkip constr
+R10338:10342 PL.Imp <> CSkip constr
+R10432:10440 PL.Imp BinRel id def
+R10475:10488 PL.Equivalence_Semantics_1 <> ceval_preserve thm
+R10475:10488 PL.Equivalence_Semantics_1 <> ceval_preserve thm
+prf 10626:10639 <> semantic_equiv
+binder 10649:10649 <> c:40
+binder 10651:10653 <> st1:41
+binder 10655:10657 <> st2:42
+R10677:10681 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R10662:10666 PL.Imp <> ceval def
+R10674:10676 PL.Equivalence_Semantics_1 <> st2:42 var
+R10670:10672 PL.Equivalence_Semantics_1 <> st1:41 var
+R10668:10668 PL.Equivalence_Semantics_1 <> c:40 var
+R10682:10692 PL.Imp <> multi_cstep def
+R10703:10703 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10709:10710 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10714:10714 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10704:10708 PL.Imp <> CSkip constr
+R10711:10713 PL.Equivalence_Semantics_1 <> st2:42 var
+R10694:10694 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10696:10697 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10701:10701 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10695:10695 PL.Equivalence_Semantics_1 <> c:40 var
+R10698:10700 PL.Equivalence_Semantics_1 <> st1:41 var
+R10753:10771 PL.Equivalence_Semantics_1 <> semantic_equiv_com1 thm
+R10753:10771 PL.Equivalence_Semantics_1 <> semantic_equiv_com1 thm
+R10784:10802 PL.Equivalence_Semantics_1 <> semantic_equiv_com2 thm
+R10784:10802 PL.Equivalence_Semantics_1 <> semantic_equiv_com2 thm

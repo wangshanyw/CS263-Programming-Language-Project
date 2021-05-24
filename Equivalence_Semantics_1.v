@@ -162,8 +162,7 @@ Proof.
     - apply multi_congr_CAss, semantic_equiv_aexp1.
       reflexivity.
     - apply CS_Ass; tauto.
-  + Print ceval.
-    rewrite ceval_CSeq in H.
+  + rewrite ceval_CSeq in H.
     unfold BinRel.concat in H.
     destruct H as [st' [? ?]].
     etransitivity; [apply multi_congr_CSeq, IHc1, H |].
