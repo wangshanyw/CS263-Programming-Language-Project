@@ -13,7 +13,7 @@ Print Sets.
 
 Definition skip_sem: state -> list state -> state -> Prop :=
   fun st1 sts st2 =>
-    st1 = st2 /\ sts = [st2].
+    st1 = st2 /\ sts = [].
 
 Definition asgn_sem (X: var) (E: aexp): state -> list state -> state -> Prop :=
   fun st1 sts st2 =>

@@ -1,8 +1,7 @@
 Require Import PL.Imp PL.ImpExt PL.RTClosure.
 Local Open Scope imp.
 
-Require Import PL.Denotational_Semantics_2.
-
+Require Import PL.Denotational_Semantics_3.
 
 
 (* ################################################################# *)

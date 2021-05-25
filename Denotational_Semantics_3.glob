@@ -1,0 +1,305 @@
+DIGEST aa0a7079d83c4512839da7048e7e143d
+FPL.Denotational_Semantics_3
+R15:33 Coq.micromega.Psatz <> <> lib
+R51:64 Coq.Lists.List <> <> lib
+R104:130 Coq.Classes.RelationClasses <> <> lib
+R148:168 Coq.Classes.Morphisms <> <> lib
+R186:197 PL.RTClosure <> <> lib
+R215:220 PL.Imp <> <> lib
+R231:245 PL.RTClosure <> clos_refl_trans ind
+def 322:329 <> skip_sem
+R337:340 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R351:354 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R360:363 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R355:359 PL.Imp <> state def
+R341:344 Coq.Init.Datatypes <> list ind
+R346:350 PL.Imp <> state def
+R332:336 PL.Imp <> state def
+binder 378:380 <> st1:1
+binder 382:384 <> sts:2
+binder 386:388 <> st2:3
+R406:409 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R400:402 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R397:399 PL.Denotational_Semantics_3 <> st1:1 var
+R403:405 PL.Denotational_Semantics_3 <> st2:3 var
+R413:415 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R410:412 PL.Denotational_Semantics_3 <> sts:2 var
+R416:417 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+def 432:439 <> asgn_sem
+R445:447 PL.Imp <> var def
+binder 442:442 <> X:4
+R454:457 PL.Imp <> aexp ind
+binder 451:451 <> E:5
+R466:469 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R480:483 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R489:492 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R484:488 PL.Imp <> state def
+R470:473 Coq.Init.Datatypes <> list ind
+R475:479 PL.Imp <> state def
+R461:465 PL.Imp <> state def
+binder 507:509 <> st1:6
+binder 511:513 <> sts:7
+binder 515:517 <> st2:8
+R545:552 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R531:533 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R526:528 PL.Denotational_Semantics_3 <> st2:8 var
+R530:530 PL.Denotational_Semantics_3 <> X:4 var
+R534:538 PL.Imp <> aeval def
+R542:544 PL.Denotational_Semantics_3 <> st1:6 var
+R540:540 PL.Denotational_Semantics_3 <> E:5 var
+binder 560:560 <> Y:9
+R569:572 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R586:593 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R578:580 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R573:575 PL.Denotational_Semantics_3 <> st1:6 var
+R577:577 PL.Denotational_Semantics_3 <> Y:9 var
+R581:583 PL.Denotational_Semantics_3 <> st2:8 var
+R585:585 PL.Denotational_Semantics_3 <> Y:9 var
+R597:599 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R594:596 PL.Denotational_Semantics_3 <> sts:7 var
+R600:600 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R604:604 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R601:603 PL.Denotational_Semantics_3 <> st2:8 var
+R564:567 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R563:563 PL.Denotational_Semantics_3 <> X:4 var
+R568:568 PL.Denotational_Semantics_3 <> Y:9 var
+def 619:625 <> seq_sem
+R640:643 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R654:657 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R663:666 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R658:662 PL.Imp <> state def
+R644:647 Coq.Init.Datatypes <> list ind
+R649:653 PL.Imp <> state def
+R635:639 PL.Imp <> state def
+binder 628:629 <> d1:10
+binder 631:632 <> d2:11
+R682:685 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R696:699 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R705:708 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R700:704 PL.Imp <> state def
+R686:689 Coq.Init.Datatypes <> list ind
+R691:695 PL.Imp <> state def
+R677:681 PL.Imp <> state def
+binder 723:725 <> st1:12
+binder 727:729 <> sts:13
+binder 731:733 <> st3:14
+R742:748 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R764:771 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 749:753 <> sts_1:15
+binder 755:759 <> sts_2:16
+binder 761:763 <> st2:17
+R788:791 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R772:773 PL.Denotational_Semantics_3 <> d1:10 var
+R785:787 PL.Denotational_Semantics_3 <> st2:17 var
+R779:783 PL.Denotational_Semantics_3 <> sts_1:15 var
+R775:777 PL.Denotational_Semantics_3 <> st1:12 var
+R808:811 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R792:793 PL.Denotational_Semantics_3 <> d2:11 var
+R805:807 PL.Denotational_Semantics_3 <> st3:14 var
+R799:803 PL.Denotational_Semantics_3 <> sts_2:16 var
+R795:797 PL.Denotational_Semantics_3 <> st2:17 var
+R815:817 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R812:814 PL.Denotational_Semantics_3 <> sts:13 var
+R823:826 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R818:822 PL.Denotational_Semantics_3 <> sts_1:15 var
+R827:831 PL.Denotational_Semantics_3 <> sts_2:16 var
+def 852:859 <> test_sem
+R870:873 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R865:869 PL.Imp <> state def
+binder 862:862 <> X:18
+R886:889 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R900:903 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R909:912 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R904:908 PL.Imp <> state def
+R890:893 Coq.Init.Datatypes <> list ind
+R895:899 PL.Imp <> state def
+R881:885 PL.Imp <> state def
+binder 927:929 <> st1:19
+binder 931:933 <> sts:20
+binder 935:937 <> st2:21
+R955:958 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R949:951 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R946:948 PL.Denotational_Semantics_3 <> st1:19 var
+R952:954 PL.Denotational_Semantics_3 <> st2:21 var
+R964:967 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R959:959 PL.Denotational_Semantics_3 <> X:18 var
+R961:963 PL.Denotational_Semantics_3 <> st1:19 var
+R971:973 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R968:970 PL.Denotational_Semantics_3 <> sts:20 var
+R974:974 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R978:978 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R975:977 PL.Denotational_Semantics_3 <> st2:21 var
+def 993:1001 <> union_sem
+R1015:1018 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1029:1032 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1038:1041 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1033:1037 PL.Imp <> state def
+R1019:1022 Coq.Init.Datatypes <> list ind
+R1024:1028 PL.Imp <> state def
+R1010:1014 PL.Imp <> state def
+binder 1004:1004 <> d:22
+binder 1006:1007 <> d':23
+R1057:1060 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1071:1074 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1080:1083 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1075:1079 PL.Imp <> state def
+R1061:1064 Coq.Init.Datatypes <> list ind
+R1066:1070 PL.Imp <> state def
+R1052:1056 PL.Imp <> state def
+binder 1098:1100 <> st1:24
+binder 1102:1104 <> sts:25
+binder 1106:1108 <> st2:26
+R1130:1133 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1117:1117 PL.Denotational_Semantics_3 <> d:22 var
+R1127:1129 PL.Denotational_Semantics_3 <> st2:26 var
+R1123:1125 PL.Denotational_Semantics_3 <> sts:25 var
+R1119:1121 PL.Denotational_Semantics_3 <> st1:24 var
+R1134:1135 PL.Denotational_Semantics_3 <> d':23 var
+R1145:1147 PL.Denotational_Semantics_3 <> st2:26 var
+R1141:1143 PL.Denotational_Semantics_3 <> sts:25 var
+R1137:1139 PL.Denotational_Semantics_3 <> st1:24 var
+def 1166:1171 <> if_sem
+R1177:1180 PL.Imp <> bexp ind
+binder 1174:1174 <> b:27
+R1196:1199 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1210:1213 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1219:1222 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1214:1218 PL.Imp <> state def
+R1200:1203 Coq.Init.Datatypes <> list ind
+R1205:1209 PL.Imp <> state def
+R1191:1195 PL.Imp <> state def
+binder 1184:1185 <> d1:28
+binder 1187:1188 <> d2:29
+R1238:1241 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1252:1255 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1261:1264 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1256:1260 PL.Imp <> state def
+R1242:1245 Coq.Init.Datatypes <> list ind
+R1247:1251 PL.Imp <> state def
+R1233:1237 PL.Imp <> state def
+R1275:1283 PL.Denotational_Semantics_3 <> union_sem def
+R1328:1334 PL.Denotational_Semantics_3 <> seq_sem def
+R1361:1362 PL.Denotational_Semantics_3 <> d2:29 var
+R1337:1344 PL.Denotational_Semantics_3 <> test_sem def
+R1347:1351 PL.Imp <> beval def
+R1354:1355 PL.Imp <> ::imp_scope:'!'_x not
+R1356:1356 PL.Denotational_Semantics_3 <> b:27 var
+R1290:1296 PL.Denotational_Semantics_3 <> seq_sem def
+R1319:1320 PL.Denotational_Semantics_3 <> d1:28 var
+R1299:1306 PL.Denotational_Semantics_3 <> test_sem def
+R1309:1313 PL.Imp <> beval def
+R1315:1315 PL.Denotational_Semantics_3 <> b:27 var
+def 1376:1389 <> iter_loop_body
+R1397:1400 PL.Imp <> bexp ind
+binder 1394:1394 <> b:30
+R1422:1425 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1436:1439 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1445:1448 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1440:1444 PL.Imp <> state def
+R1426:1429 Coq.Init.Datatypes <> list ind
+R1431:1435 PL.Imp <> state def
+R1417:1421 PL.Imp <> state def
+binder 1406:1414 <> loop_body:31
+R1461:1463 Coq.Init.Datatypes <> nat ind
+binder 1458:1458 <> n:32
+R1475:1478 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1489:1492 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1498:1501 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1493:1497 PL.Imp <> state def
+R1479:1482 Coq.Init.Datatypes <> list ind
+R1484:1488 PL.Imp <> state def
+R1470:1474 PL.Imp <> state def
+R1518:1518 PL.Denotational_Semantics_3 <> n:32 var
+R1529:1529 Coq.Init.Datatypes <> O constr
+R1534:1541 PL.Denotational_Semantics_3 <> test_sem def
+R1544:1548 PL.Imp <> beval def
+R1551:1552 PL.Imp <> ::imp_scope:'!'_x not
+R1553:1553 PL.Denotational_Semantics_3 <> b:30 var
+R1561:1561 Coq.Init.Datatypes <> S constr
+R1569:1575 PL.Denotational_Semantics_3 <> seq_sem def
+R1627:1633 PL.Denotational_Semantics_3 <> seq_sem def
+R1646:1659 PL.Denotational_Semantics_3 <> iter_loop_body:33 def
+R1663:1671 PL.Denotational_Semantics_3 <> loop_body:31 var
+R1661:1661 PL.Denotational_Semantics_3 <> b:30 var
+R1635:1643 PL.Denotational_Semantics_3 <> loop_body:31 var
+R1592:1599 PL.Denotational_Semantics_3 <> test_sem def
+R1602:1606 PL.Imp <> beval def
+R1608:1608 PL.Denotational_Semantics_3 <> b:30 var
+def 1697:1711 <> omega_union_sem
+R1720:1723 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1729:1732 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1743:1746 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1752:1755 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1747:1751 PL.Imp <> state def
+R1733:1736 Coq.Init.Datatypes <> list ind
+R1738:1742 PL.Imp <> state def
+R1724:1728 PL.Imp <> state def
+R1717:1719 Coq.Init.Datatypes <> nat ind
+binder 1714:1714 <> d:35
+R1771:1774 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1785:1788 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1794:1797 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1789:1793 PL.Imp <> state def
+R1775:1778 Coq.Init.Datatypes <> list ind
+R1780:1784 PL.Imp <> state def
+R1766:1770 PL.Imp <> state def
+binder 1812:1814 <> st1:36
+binder 1816:1818 <> sts:37
+binder 1820:1822 <> st2:38
+R1827:1833 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1835:1836 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1834:1834 <> n:39
+R1837:1837 PL.Denotational_Semantics_3 <> d:35 var
+R1849:1851 PL.Denotational_Semantics_3 <> st2:38 var
+R1845:1847 PL.Denotational_Semantics_3 <> sts:37 var
+R1841:1843 PL.Denotational_Semantics_3 <> st1:36 var
+R1839:1839 PL.Denotational_Semantics_3 <> n:39 var
+def 1866:1873 <> loop_sem
+R1879:1882 PL.Imp <> bexp ind
+binder 1876:1876 <> b:40
+R1902:1905 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1916:1919 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1925:1928 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1920:1924 PL.Imp <> state def
+R1906:1909 Coq.Init.Datatypes <> list ind
+R1911:1915 PL.Imp <> state def
+R1897:1901 PL.Imp <> state def
+binder 1886:1894 <> loop_body:41
+R1944:1947 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1958:1961 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1967:1970 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1962:1966 PL.Imp <> state def
+R1948:1951 Coq.Init.Datatypes <> list ind
+R1953:1957 PL.Imp <> state def
+R1939:1943 PL.Imp <> state def
+R1981:1995 PL.Denotational_Semantics_3 <> omega_union_sem def
+R1998:2011 PL.Denotational_Semantics_3 <> iter_loop_body def
+R2015:2023 PL.Denotational_Semantics_3 <> loop_body:41 var
+R2013:2013 PL.Denotational_Semantics_3 <> b:40 var
+def 2037:2041 <> ceval
+R2047:2049 PL.Imp <> com ind
+binder 2044:2044 <> c:42
+R2058:2061 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2072:2075 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2081:2084 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2076:2080 PL.Imp <> state def
+R2062:2065 Coq.Init.Datatypes <> list ind
+R2067:2071 PL.Imp <> state def
+R2053:2057 PL.Imp <> state def
+R2101:2101 PL.Denotational_Semantics_3 <> c:42 var
+R2112:2116 PL.Imp <> CSkip constr
+R2121:2128 PL.Denotational_Semantics_3 <> skip_sem def
+R2134:2137 PL.Imp <> CAss constr
+R2146:2153 PL.Denotational_Semantics_3 <> asgn_sem def
+R2163:2166 PL.Imp <> CSeq constr
+R2177:2183 PL.Denotational_Semantics_3 <> seq_sem def
+R2197:2201 PL.Denotational_Semantics_3 <> ceval:43 def
+R2186:2190 PL.Denotational_Semantics_3 <> ceval:43 def
+R2211:2213 PL.Imp <> CIf constr
+R2226:2231 PL.Denotational_Semantics_3 <> if_sem def
+R2247:2251 PL.Denotational_Semantics_3 <> ceval:43 def
+R2236:2240 PL.Denotational_Semantics_3 <> ceval:43 def
+R2261:2266 PL.Imp <> CWhile constr
+R2275:2282 PL.Denotational_Semantics_3 <> loop_sem def
+R2287:2291 PL.Denotational_Semantics_3 <> ceval:43 def
+R2293:2293 PL.Denotational_Semantics_3 <> c:42 var

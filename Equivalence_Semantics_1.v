@@ -366,7 +366,7 @@ But this single direction version is enough to use. *)
     unfold BinRel.union,
            BinRel.concat,
            BinRel.test_rel.
-    left; exists st; simpl.
+    left; exists st. simpl.
     unfold Sets.full; tauto.
   + rewrite ceval_CIf.
     unfold if_sem.
