@@ -1,4 +1,4 @@
-# CS263-Programming-Language-Project
+# Equivalence among 3 denotational semantics and small step semantics
 ---
 ## 1 Organization of files
 - 3 definitions of denotational semantics
