@@ -1,19 +1,22 @@
 Require Import PL.Imp PL.ImpExt PL.RTClosure.
 Local Open Scope imp.
-
+Require Import Coq.micromega.Psatz.
+Require Import Coq.Lists.List. Import ListNotations.
+Require Import Coq.Classes.RelationClasses.
+Require Import Coq.Classes.Morphisms.
 Require Import PL.Denotational_Semantics_3.
-
+Print ceval.
 
 (* ################################################################# *)
 (** * From Denotations To Multi-step Relations *)
 
-Lemma semantic_equiv_iter_loop1: forall st1 st2 n b c, 
-  (forall st1 st2, (exists t: Z, ceval c st1 t st2) -> multi_cstep (c, st1) (Skip, st2)) ->
-  (exists n0 : nat, iter_loop_body b (ceval c) n0 st1 n st2) ->
+Lemma semantic_equiv_iter_loop1: forall st1 st2 sts b c, 
+  (forall st1 st2, (exists sts_1: list state, ceval c st1 sts_1 st2) -> multi_cstep (c, st1) (Skip, st2)) ->
+  (exists n0 : nat, iter_loop_body b (ceval c) n0 st1 sts st2) ->
   multi_cstep (While b Do c EndWhile, st1) (Skip, st2).
 Proof.
   intros. destruct H0.
-  revert st1 st2 n H0; induction x; intros.
+  revert st1 st2 sts H0; induction x; intros.
   + simpl in H0.
     unfold BinRel.test_rel in H0.
     destruct H0.
@@ -34,12 +37,10 @@ Proof.
     etransitivity_1n; [apply CS_Seq |].
     apply IHx with x4.
     tauto.
-Qed.
-
-
+Qed. 
 
 Theorem semantic_equiv_com1: forall st1 st2 c,
-  (exists t : Z, ceval c st1 t st2) -> multi_cstep (c, st1) (Skip, st2).
+  (exists sts : list state, ceval c st1 sts st2) -> multi_cstep (c, st1) (Skip, st2).
 Proof.
   intros.
   revert st1 st2 H. induction c; intros.
@@ -92,9 +93,9 @@ Qed.
     
 (* ################################################################# *)
 (** * From Multi-step Relations To Denotations*)
-Lemma loop_unrolling: forall b c (a b0: state) (t:Z),
-    ceval (While b Do c EndWhile) a t b0 <->
-    ceval (If b Then c;; While b Do c EndWhile Else Skip EndIf) a t b0.
+Lemma loop_unrolling: forall b c (a b0: state) (sts:list state),
+    ceval (While b Do c EndWhile) a sts b0 <->
+    ceval (If b Then c;; While b Do c EndWhile Else Skip EndIf) a sts b0.
 Proof.
   intros. simpl.
     unfold iff; split; intros.
@@ -105,8 +106,8 @@ Proof.
       unfold if_sem, union_sem.
       right; simpl.
       unfold seq_sem, skip_sem.
-      exists t. exists 0. exists b0; split; [exact H | ]. 
-      split. tauto. lia.
+      exists sts. exists nil. exists b0; split; [exact H | ]. 
+      split. tauto. intuition.
     - simpl in H.
       unfold if_sem, union_sem.
       left.
@@ -119,7 +120,7 @@ Proof.
       split. exists t0. exists t3. exists st2';split; [exact H0 |].
       unfold loop_sem, omega_union_sem. split.
       exists n. destruct H2.
-      exact H2. lia. lia.
+      exact H2. tauto. tauto.
   + unfold if_sem, union_sem in H.
     unfold loop_sem, omega_union_sem.
     destruct H.
@@ -129,7 +130,7 @@ Proof.
       unfold seq_sem, skip_sem in H.
       destruct H as [t1 [t2 [st2' [? ?]]]]. destruct H0. destruct H0.
       rewrite H0 in H. rewrite H2 in H1.
-      assert (t = t1). rewrite H1. lia.
+      assert (sts = t1). rewrite H1. intuition.
       rewrite <- H3 in H. tauto.
     }
     unfold seq_sem at 1 in H.
@@ -148,12 +149,11 @@ Proof.
     exists st0; split; [exact H0 |]. split. tauto. tauto. tauto.
 Qed.
 
-
-Lemma ceval_preserve_1: forall c1 c2 st1 st2, 
+Lemma ceval_preserve_1: forall c1 c2 (st1 st2:state), 
   cstep (c1, st1) (c2, st2) ->
-  forall st3 t1, ceval c2 st2 t1 st3 -> (ceval c1 st1 t1 st3 \/ ceval c1 st1 (t1+1)%Z st3).
+  forall (st3:state) (sts:list state), ceval c2 st2 sts st3 -> ceval c1 st1 sts st3 \/ ceval c1 st1 ([st2]++sts) st3.
 Proof.
-  intros. revert t1 st3 H0.
+  intros. revert sts st3 H0.
   induction_cstep H; simpl; intros.
   + apply aeval_preserve in H.
     unfold asgn_sem in H0. unfold asgn_sem.
@@ -167,10 +167,10 @@ Proof.
     pose proof IHcstep t2 st2'.
     destruct H2. tauto.
     unfold seq_sem. left. exists t2. exists t3. exists st2'. tauto.
-    unfold seq_sem. right. exists (t2+1)%Z. exists t3. exists st2'. 
-    destruct H1. split. tauto. split. tauto. rewrite H3. lia.
+    unfold seq_sem. right. exists ([st']++t2). exists t3. exists st2'. 
+    destruct H1. split. tauto. split. tauto. rewrite H3. intuition.
   + left. unfold seq_sem, skip_sem.
-    exists 0. exists t1. exists st. tauto.
+    exists []. exists sts. exists st. tauto.
   + left.
     unfold if_sem in H0.
     unfold if_sem.
@@ -186,13 +186,13 @@ Proof.
     right. exists t2. exists t3. exists st2'. tauto.
   + right. unfold if_sem.
     unfold union_sem, seq_sem, test_sem.
-    left. exists 1. exists t1. exists st; split.
-    simpl. unfold Sets.full. tauto. split. tauto. lia.
+    left. exists [st]. exists sts. exists st; split.
+    simpl. unfold Sets.full. tauto. split. tauto. intuition.
   + right. unfold if_sem.
     unfold union_sem, seq_sem, test_sem.
-    right. exists 1. exists t1. exists st; split.
-    simpl. unfold Sets.complement, Sets.empty. tauto. split. tauto. lia.
-  + pose proof loop_unrolling b c st st3 t1.
+    right. exists [st]. exists sts. exists st; split.
+    simpl. unfold Sets.complement, Sets.empty. tauto. split. tauto. intuition.
+  + pose proof loop_unrolling b c st st3 sts.
     simpl in H.
     left. tauto.
 Qed.
@@ -200,12 +200,12 @@ Qed.
     
 Lemma ceval_preserve: forall c1 c2 st1 st2, 
   cstep (c1, st1) (c2, st2) ->
-  forall st3, (exists t1, ceval c2 st2 t1 st3) -> (exists t2, ceval c1 st1 t2 st3).
+  forall st3, (exists sts1:list state, ceval c2 st2 sts1 st3) -> (exists sts2:list state, ceval c1 st1 sts2 st3).
 Proof.
   intros.
   pose proof ceval_preserve_1 c1 c2 st1 st2.
-  assert (forall (st3 : state) (t1 : Z),
-     ceval c2 st2 t1 st3 -> ceval c1 st1 t1 st3 \/ ceval c1 st1 (t1 + 1) st3).
+  assert (forall (st3 : state) (sts : list state),
+     ceval c2 st2 sts st3 -> ceval c1 st1 sts st3 \/ ceval c1 st1 ([st2] ++ sts) st3).
   apply H1. tauto. clear H1.
   pose proof H2 st3. clear H2.
   destruct H0.
@@ -213,30 +213,29 @@ Proof.
   apply H2 in H0.
   destruct H0.
   + exists x. tauto.
-  + exists (x+1)%Z. tauto.
+  + exists ([st2] ++ x). tauto.
 Qed.
 
-
 Theorem semantic_equiv_com2: forall c st1 st2,
-  multi_cstep (c, st1) (Skip, st2) -> (exists t : Z, ceval c st1 t st2).
+  multi_cstep (c, st1) (Skip, st2) -> exists sts : list state, ceval c st1 sts st2.
 Proof.
   intros.
   remember (CSkip) as c' eqn:H0.
   induction_1n H.
   simpl; intros; subst.
   + simpl.
-    unfold skip_sem. exists 0.
+    unfold skip_sem. exists nil.
     split. reflexivity.
     reflexivity.
   + pose proof ceval_preserve _ _ _ _ H st2.
     tauto.
 Qed.
 
-
 (* ################################################################# *)
-(** * Final Theorem of semantic equivalence between the second Denotational Semantics and Small Step Semantics. *)
+(** * Final Theorem of semantic equivalence between the second 
+Denotational Semantics and Small Step Semantics. *)
 Theorem semantic_equiv: forall c st1 st2, 
-  (exists t: Z, ceval c st1 t st2) <-> multi_cstep (c, st1) (CSkip, st2).
+  (exists sts: list state, ceval c st1 sts st2) <-> multi_cstep (c, st1) (CSkip, st2).
 Proof.
   intros.
   split.

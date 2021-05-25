@@ -6,9 +6,6 @@ Require Import PL.RTClosure.
 Require Import PL.Imp.
 
 
-Print clos_refl_trans.
-Print Sets.
-
 (** Third Denotational Semantics with traces **)
 
 Definition skip_sem: state -> list state -> state -> Prop :=
