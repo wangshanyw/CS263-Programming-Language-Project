@@ -4,7 +4,7 @@
 - [ ] A general theorem for proving equivalence between two recursively defined semantics
 - [x] Equivalence among three recursively defined denotational semantics: the normal one, the one with time, and the one with traces 
 - [x] Equivalence between small step semantics and each of denotational semantics
-### 2 Compilation for our work
+### 2 Compiling for our work
 - Compile `Imp.v`, `RTClosure.v`, `ImpExt.v`, `ImpCF.v` to found the environment
 - Compile `Denotational_Semantics_2.v`,`Denotational_Semantics_3.v`,`Equivalence_Semantics_1.v` for further proof
 ### 3 Proof corresponding to files
