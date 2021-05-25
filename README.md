@@ -12,10 +12,15 @@
   - `Imp.v`contains the normal one
   - `Denotational_Semantics_2.v`: the one with time
   - `Denotational_Semantics_3.v`: the one with traces
+- Equivalence between each 2 Denotational Semantics
+  - `Equivalence_Denotational_Semantics_1_2.v`: the normal one & the one with tim
+  - `Equivalence_Denotational_Semantics_1_3.v`: the normal one & the one with traces
 - Equivalence between Small Steps Semantics and each of Denotational Semantics
   - `Equivalence_Semantics_1.v`: normal one
   - `Equivalence_Semantics_2.v`: the one with time
   - `Equivalence_Semantics_3.v`: the one with traces
+- General therom for equivalence between 2 recursively defined semantics
+  - `General_Denotational_Semantics.v`: *incomplete*
 ### 4 Contributors
 F1903003 易文龙 @[yiwenlong2001](https://github.com/yiwenlong2001)
 
