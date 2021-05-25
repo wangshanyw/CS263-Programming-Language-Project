@@ -1,2 +1,4 @@
 !*.v
 
+readme.md       # 屏蔽仓库中所有名为 readme.md 的文件
+!/readme.md     # 在上一条屏蔽规则的条件下，不屏蔽仓库根目录下的 readme.md 文件
