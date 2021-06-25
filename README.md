@@ -13,9 +13,10 @@
   - `Denotational_Semantics_1.v`: the normal one denoted by `skip_sem` and so on
   - `Denotational_Semantics_2.v`: the one with time
   - `Denotational_Semantics_3.v`: the one with traces
-- General Theorem and Proof on equivalence between each 2 Denotational Semantics with General Theorem
+- General Theorem and Proof on equivalence between each 2 Denotational Semantics with General Theorem 
   - `equiv_sem_final.v`
 - Proof on equivalence between each 2 Denotational Semantics
+  - > Actually, we don't use general theorem here. we suppose to prove that these three denotation semantics are truely equal, though it is really obviously. Thus that is why we just prove the equivlance of T1&T2 and T1&T3.
   - `Equivalence_Denotational_Semantics_1_2.v`
   - `Equivalence_Denotational_Semantics_1_3.v`
 - Proof on equivalence between Small Steps Semantics and each of Denotational Semantics
@@ -51,7 +52,17 @@ In our proof, we view the abstract `denotation` as Type instead of each of the c
   forall st1 st2, d1 st1 st2 -> exists sts,d2 st1 sts st2.
   ```
 - Then, we can use the general theorem to prove the equivalence between 2 denotational semantics.
-### 6 Proof on the equivalence between denotational semantics and small step semantics
+
+### 6 Proof on the equivlance bewteen 'sem' semantic and denotation semantic
+- When we get the finally conclusions, we will find that they are about two sem-defined semantic(you will find it in equiv_sem_final.v), we still need to prove that they are equal to denotation semantic.  
+  For example.
+  ```
+  Lemma sem_equiv_t2:
+  forall c st1 st2 t,
+  ceval_by_sem (Sem T2.skip_sem T2.asgn_sem T2.seq_sem T2.if_sem T2.loop_sem) c st1 t st2 <-> T2.ceval c st1 t st2.
+  ```
+
+### 7 Proof on the equivalence between denotational semantics and small step semantics
 - First, we work out the definition of `equivalence` between denotational semantics and small step semantics.
   Take the second denotational semantics as an example.
   ```
@@ -60,7 +71,7 @@ In our proof, we view the abstract `denotation` as Type instead of each of the c
   ```
 - Then we prove it from two directions through induction method.
 
-### 7 Contributors
+### 8 Contributors
 F1903003 易文龙 @[yiwenlong2001](https://github.com/yiwenlong2001)
 
 F1903002 张若涵 @[wangshanyw](https://github.com/wangshanyw)
